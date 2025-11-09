@@ -107,7 +107,7 @@ export default function WaccForm({ onResult }) {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/api/wacc", payload, {
+      const res = await axios.post("https://wacc-backend.vercel.app/api/wacc", payload, {
         timeout: 7000,
       });
       setResult(res.data);
